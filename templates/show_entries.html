@@ -1,15 +1,30 @@
 {% extends "layout.html" %}
 {% block body %}
   {% if session.logged_in %}
-    <form action="{{ url_for('add_entry') }}" method=post class=add-entry>
-      <dl>
-        <dt>Title:
-        <dd><input type=text size=30 name=title>
-        <dt>Text:
-        <dd><textarea name=text rows=5 cols=40></textarea>
-        <dd><input type=submit value=Share>
-      </dl>
-    </form>
+  <div class="sidebar1">BACHAT / SAVINGS: 3000</div>
+  <div class="sidebar1" id="own">I Own</div>
+  <aside class="images1">
+  <a href="#"><div class="icon-home icon-larger col1"></div></a>
+  <a href="#"><div class="icon-home icon-larger icon-screenshot col2"></div></a>
+  <a href="#"><div class="icon-home icon-larger icon-plane col3"></div></a>
+  </aside>
+  <header id="essay">&nbsp;</header>
+  <nav>
+    <ul>
+      <li>
+        <a href="#"><div>A</div></a>
+      </li>
+      <li>
+        <a href="#"><div>B</div></a>
+      </li>
+      <li>
+        <a href="#"><div>C</div></a>
+      </li>
+      <li>
+        <a href="#"><div>D</div></a>
+      </li>
+  </ul>
+</nav>
   {% endif %}
   <ul class=entries>
   {% for entry in entries %}
