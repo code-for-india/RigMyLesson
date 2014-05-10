@@ -1,0 +1,79 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
+.icon-larger:before 
+{
+  font-size: 150px;
+}
+#essay {
+	height: 542px;
+	width: 100%;
+	background-color: #DBD1B0;
+}
+nav ul li {
+	list-style-type: none;
+	display: inline;
+	text-decoration: none;
+}
+ul li a {
+	text-decoration: none;
+	color: #000000;
+}
+li div  {
+	width: 114px;
+	height: 60px;
+	background-color: #C5ACBB;
+	float: left;
+	margin-left: 130px;
+	margin-top: 26px;
+	border-radius: 24px;
+	text-align: center;
+}
+li a div:hover {
+	color: #FFFFFF;
+	background-color: #6A8281;
+}
+body {
+	margin: 0;
+}
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background-color: #EADCAE;
+	padding-bottom: 10px;
+	font-family: jolly-lodger;
+	font-style: normal;
+	font-weight: 400;
+	font-size: x-large;
+	text-align: center;
+}
+.col1 {
+	width: 33%;
+	float: left;
+	position: absolute;
+	top: 158px;
+}
+.col2 {
+	width: 33%;
+	float: left;
+	position: absolute;
+	top: 158px;
+	margin-left: 250px;
+}
+.col3 {
+	width: 33%;
+	float: left;
+	position: absolute;
+	top: 158px;
+	margin-left: 501px;
+}
+.images1 {
+	float: left;
+}
+#own {
+	right: 0px;
+	position: absolute;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: #000000;
+}
