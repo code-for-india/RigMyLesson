@@ -86,19 +86,19 @@ def login():
     return render_template('login.html', error=error)
 
 
-@app.route('/1')
+@app.route('/1', methods=['GET', 'POST'])
 def page2():
-    return redirect(url_for('page2'))
+    return render_template('page2.html')
 
-@app.route('/2')
+@app.route('/2', methods=['GET', 'POST'])
 def page3():
-    return redirect(url_for('page3'))
+    return render_template('page3.html')
 
 @app.route('/logout')
 def logout():
     session.pop('logged_in', None)
     flash('You were logged out')
-    return redirect(url_for('show_entries'))
+    return redirect('show_entries')
 
 
 if __name__ == '__main__':
