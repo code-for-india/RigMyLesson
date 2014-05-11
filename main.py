@@ -86,6 +86,14 @@ def login():
     return render_template('login.html', error=error)
 
 
+@app.route('/1')
+def page2():
+    return redirect(url_for('page2'))
+
+@app.route('/2')
+def page3():
+    return redirect(url_for('page3'))
+
 @app.route('/logout')
 def logout():
     session.pop('logged_in', None)
