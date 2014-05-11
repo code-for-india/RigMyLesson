@@ -1,13 +1,37 @@
 {% extends "layout.html" %}
 {% block body %}
   {% if session.logged_in %}
-  <div class="sidebar1">BACHAT / SAVINGS: 3000</div>
   <div class="sidebar1" id="own">I Own</div>
   <aside class="images1">
-  <img src="../static/icons/1.CANDY.png" /><div class="icon-home icon-larger col1"></div></a>
-  <img src="../static/icons/2.ICE CREAM.png" /><div class="icon-home icon-larger icon-screenshot col2"></div></a>
-  <img src="../static/icons/3.BOOKS.png" /><div class="icon-home icon-larger icon-plane col3"></div></a>
+   <script type="text/javascript">
+   $(function () {
+    $('')
+   });
+   </script>
+  <div class="sidebar1">BACHAT / SAVINGS:</div>
+  
+  <!-- <li> --><a href="#" onclick="popup1()"><img src="../static/icons/1.png" /></a>
+    <a href="#" onclick="popup2()"><img src="../static/icons/2.png" /></a>
+    <a href="#" onclick="popup3()"><img src="../static/icons/3.png" /></a><!-- </li> -->
+  <!-- <li><img src="../static/icons/4.png" />
+    <img src="../static/icons/5.png" />
+    <img src="../static/icons/6.png" /></li>
+  <li><img src="../static/icons/7.png" />
+    <img src="../static/icons/8.png" />
+    <img src="../static/icons/9.png" /></li>
+  </ul> -->
   </aside>
+  <script type="text/javascript">
+ function popup1(){
+  alert("You have spent 25 Rs.");
+ }
+  function popup2(){
+  alert("You have spent 15 Rs.");
+ }
+  function popup3(){
+  alert("You have spent 35 Rs.");
+ }
+  </script>
   <header id="essay">&nbsp;</header>
 
   {% endif %}
