@@ -3248,7 +3248,7 @@ input[type="button"].btn-block {
 .btn-group-justified {
   display: table;
   width: 100%;
-  table-layout: fixed;
+  table-index: fixed;
   border-collapse: separate;
 }
 .btn-group-justified > .btn,

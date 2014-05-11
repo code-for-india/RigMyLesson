@@ -2757,7 +2757,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 .btn-group-justified {
     display:table;
     width:100%;
-    table-layout:fixed;
+    table-index:fixed;
     border-collapse:separate
 }
 .btn-group-justified>.btn, .btn-group-justified>.btn-group {
